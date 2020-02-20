@@ -3,6 +3,11 @@
     width: 90%;
     margin: 0 auto;
   }
+
+  @media @tablet {
+    width: 90%;
+    margin: 0 auto;
+  }
   .welcome {
     border-bottom: 2px dashed @navigation-border;
     padding-bottom: 1.5rem;
@@ -14,9 +19,8 @@
 
   .content-section {
     margin: 30px 0;
-    display: flex;
+    .flexMix(space-between);
     flex-wrap: wrap;
-    justify-content: space-between;
 
     .text-content {
       width: 48%;
@@ -81,9 +85,8 @@
   .content-pick {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
-    display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    .flexMix(space-between);
 
     .btn {
       .btnStyle(85%);
@@ -101,6 +104,65 @@
         width: 75%;
         margin: 0 auto;
         margin-bottom: 2.5rem;
+      }
+    }
+  }
+
+  form {
+    //  border: 1px solid red;
+    width: 80%;
+    margin: auto;
+    font-size: 1.4rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+
+    label {
+      display: block;
+      padding: 1rem 0.4rem;
+    }
+
+    div {
+      width: 50%;
+
+      @media @mobile {
+        width: 100%;
+      }
+    }
+
+    input {
+      display: inline-block;
+      margin-bottom: 1rem;
+      font-size: 1.4rem;
+      outline: none;
+      width: 80%;
+      padding: 0.4rem;
+      border: 1px solid @eastern-blue;
+      border-radius: 5px;
+
+      @media @mobile {
+        width: 100%;
+      }
+    }
+
+    .textarea {
+      width: 100%;
+      margin-bottom: 1rem;
+      textarea {
+        padding: 0.4rem;
+        font-size: 1.4rem;
+        border: 1px solid @eastern-blue;
+        border-radius: 5px;
+        width: 100%;
+        outline: none;
+      }
+    }
+
+    button {
+      .btnStyle(25%);
+
+      @media @mobile {
+        width: 40%;
       }
     }
   }
