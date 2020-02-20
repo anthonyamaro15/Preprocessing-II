@@ -375,12 +375,13 @@ header .header-container a {
   }
 }
 .home form {
+  border-top: 2px dashed #c0c0c0;
   width: 80%;
-  margin: auto;
+  margin: 3rem auto;
   font-size: 1.4rem;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 3rem;
+  padding-top: 2rem;
 }
 .home form label {
   display: block;
