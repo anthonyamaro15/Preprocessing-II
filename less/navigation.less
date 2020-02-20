@@ -3,20 +3,41 @@
 header {
   border-bottom: 2px dashed @navigation-border;
   .header-container {
+    @media @mobile {
+      width: 90%;
+      margin: 0 auto;
+    }
     height: 6vh;
     max-width: 800px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+
     align-items: center;
+
+    nav {
+      @media @mobile {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+      }
+    }
 
     h1 {
       text-transform: capitalize;
+
+      @media @mobile {
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+        font-size: 3.5rem;
+      }
     }
 
     a {
       text-decoration: none;
-      color: black;
+      color: @shark;
       padding: 0 1.2rem;
       font-size: 1.4rem;
     }

@@ -1,11 +1,11 @@
 // Mixins in here
 
-.btnStyle() {
+.btnStyle(@width) {
   display: inline-block;
   padding: 1rem 2rem;
   font-size: 1.6rem;
-  border-radius: 12px;
-  width: 85%;
+  border-radius: 10px;
+  width: @width;
   text-align: center;
   background-color: @button-bg;
   color: @white;
